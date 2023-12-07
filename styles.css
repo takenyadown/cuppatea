@@ -1,0 +1,449 @@
+@font-face {
+  font-family: 'tangoregular';
+  src: url('type/tango_regular-webfont.woff2') format('woff2'),
+       url('type/tango_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_kabelbold';
+  src: url('type/neue_kabel_bold.woff') format('woff'),
+       url('type/neue_kabel_bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_kabelblack';
+  src: url('type/neue_kabel_black.woff') format('woff'),
+       url('type/neue_kabel_black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('background.svg') no-repeat center center fixed;
+  background-size: cover;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+*/
+}
+
+body::-webkit-scrollbar{
+  
+  width: 0;
+  height: 0;
+}
+
+/*Header*/
+
+header{
+  z-index: 999999;
+}
+
+.null_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 3rem auto;
+  padding: 0 4rem;
+  margin-left: auto;
+}
+
+.nav-button,.null {
+  margin-left: auto;
+}
+
+.null {
+  flex: 0 0 auto;
+}
+
+.nav-button {
+  background-color: rgba(17, 24, 39, 0);
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: 'neue_kabelbold', "myriad-pro", "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  transition: transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.nav-button:hover {
+  /*background-color: rgba(55, 65, 81, 0.25);*/
+  background-color: rgba(38, 38, 38, 0.15);
+}
+
+.nav-button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.nav-button:active {
+  /*box-shadow: #D6D6E7 0 3px 7px inset;*/
+  transform: translateY(1px);
+  background-color: rgba(22, 22, 22, 0.25);
+}
+/*end Header*/
+
+
+
+
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+/*Home page*/
+#Home {
+  position: absolute;
+  left:0px;
+  top:0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+}
+
+#Home div p {
+  font-family: 'neue_kabelbold', "myriad-pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+  position: fixed;
+  bottom: 10px;
+  /*left: 50%;*/
+  transform: translateX(50vw) translateX(-113px);
+  font-variant-alternates: styleset(ss05);
+  text-align: center;
+}
+
+[title=" "] {
+  margin-left: 4.2vw;
+  margin-top: calc(10.5vw + 98px);
+  font-size: 116px;
+  font-family: 'tangoregular', "myriad-pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  z-index: 1;
+}
+
+.london-fog-div{
+  display: flex;
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  z-index:-1;
+}
+
+.london-fog{
+  width: 350px;
+  height: auto;
+  float: right;
+}
+
+@media (min-width: 1285px) {
+  .london-fog {
+    width: 35vw;
+  }
+  .london-fog-div {
+    bottom: 13%;
+    right: 10%;
+  }
+}
+
+/*end Home page*/
+
+/*About page*/
+#About {
+  position: absolute;
+  left:0px;
+  top:0px;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'neue_kabelbold', "myriad-pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 25.7px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  z-index: -10;
+}
+
+.about-text{
+  margin-top: 15vh;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-indent: 32px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.about-heading{
+  text-align: left;
+  margin-left: 5vw;
+  font-family: 'tangoregular', "myriad-pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 69px;
+}
+/*end About page*/
+
+/*Teas page*/
+#Teas {
+  position: absolute;
+  left:0px;
+  top:0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 80vw;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  top: calc(50vh - 16.75vw);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 0px;
+  top: 50%;
+  width: auto;
+  margin-top: -3vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  color: white;
+  font-weight: bold;
+  font-size: 4vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.4));
+  transition: filter .20s,transform .20s,font-size .20s,left .20s,right .20s;
+}
+
+.prev{
+  left: -10vw;
+}
+/* Position the "next button" to the right */
+.next {
+  right: -10vw;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  transform: translateY(-.35vw);
+  font-size: 4.5vw;
+  -webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.35));
+  filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.35));
+}
+
+.prev:hover{
+  left:-10.12vw
+}
+
+.next:hover{
+  right:-10.12vw
+}
+
+.prev:active, .next:active {
+  transform: translateY(0.15vw);
+  font-size: 3.75vw;
+}
+
+.prev:active{
+  left:-10vw
+}
+
+.next:active{
+  right:-10vw
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*Teas Mobile*/
+
+/* Slideshow container */
+.slideshow-container-mobile {
+  width: 77vw;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  top: calc(49vh - 65vw);
+}
+
+/* Hide the images by default */
+.mySlides-mobile {
+  display: none;
+
+}
+
+/* Next & previous buttons */
+.prev-mobile, .next-mobile {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 0px;
+  top: calc(50% - 5.5vw);
+  width: auto;
+  margin-top: -3vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  color: white;
+  font-weight: bold;
+  font-size: 11vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.4));
+  transition: filter .20s,transform .20s,font-size .20s,left .20s,right .20s;
+}
+
+.prev-mobile{
+  left: -10vw;
+}
+/* Position the "next button" to the right */
+.next-mobile {
+  right: -10vw;
+  border-radius: 3px 0 0 3px;
+}
+
+/*end teas mobile*/
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+/*end Teas page*/
+
+.gallary-img:hover {
+  /*background-color: rgba(55, 65, 81, 0.25);*/
+  /*box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;*/
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222);
+  transform: translateY(-2px);
+}
+
+.gallary-img:active{
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+/*adds min width for text elements*/
+@media (min-width: 1285px) {
+  [title=" "] {
+    font-size: 9vw;
+  }
+  #About {
+    font-size: 2vw;
+  }
+  .about-heading{
+    font-size: 5.4vw;
+  }
+  .column {
+    text-indent: 2.5vw;
+  }
+  #Home div p{
+    font-size: 1.3vw;
+  }
+}
